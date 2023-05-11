@@ -1,0 +1,48 @@
+{
+  "name": "mphpmaster/laravel-dev-helpers",
+  "version": "1.0.0",
+  "description": "Laravel helpers for quick development",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "functions",
+    "helpers",
+    "dev"
+  ],
+  "require": {
+    "php": ">=8.1",
+    "laravel/framework": ">=9",
+    "illuminate/support": ">=9",
+    "laravel/helpers": "^1.5"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "mPhpMaster",
+      "email": "59211285+mPhpMaster@users.noreply.github.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MPhpMaster\\LaravelDevHelpers\\": "src/"
+    },
+    "files": [
+      "src/Helpers/FCheckers.php",
+      "src/Helpers/FDebug.php",
+      "src/Helpers/FGetters.php",
+      "src/Helpers/FHelpers.php",
+      "src/Helpers/FTools.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MPhpMaster\\LaravelDevHelpers\\Providers\\HelperProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
+}
