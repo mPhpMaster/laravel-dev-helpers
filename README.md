@@ -1,7 +1,6 @@
 # Laravel Dev Helpers
 
 Laravel helpers for quick development.
-<small style="color: gray;">v1.0.0</small>
 
 > ###### Part of mphpmaster/laravel-helpers:^3
 
@@ -9,6 +8,7 @@ Laravel helpers for quick development.
 * php >=8.1 **REQUIRED IN YOUR PROJECT**
 * laravel >=9 **REQUIRED IN YOUR PROJECT**
 * illuminate/support >=9 _composer will install it automaticly_
+* symfony/var-dumper ^6.0 _composer will install it automaticly_
 * laravel/helpers ^1.5 _composer will install it automaticly_
 
 ## Installation:
@@ -17,6 +17,7 @@ Laravel helpers for quick development.
   ```
 
 ## Content:
+- Add file and line number when using `dd` or `dump`.
 - Functions:
   - `hasDeveloper`
   - `getDeveloper`
@@ -68,9 +69,8 @@ return [
 
 ---
 
-## To do:
-  - add `dump` helper to print file path and line. 
-  - add `d` helper to print file path and line.
+## ToDo:
+  - ...
 
 > *Inspired by laravel/helpers.*
 
